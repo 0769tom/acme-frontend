@@ -1,5 +1,5 @@
 {
-  "name": "ASCH",
+  "name": "ACME",
   "version": "0.0.1",
   "authors": [
     "zenking<zhangling@whatsmax.com>"
@@ -9,7 +9,7 @@
     "globals"
   ],
   "keywords": [
-    "ASCH"
+    "ACME"
   ],
   "license": "MIT",
   "ignore": [
