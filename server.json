@@ -1,0 +1,76 @@
+{
+	"server": {
+		"dev": "http://127.0.0.1:4096"
+	},
+	//登录接口
+	"loginApi": {
+		"mock": "/data/home/accounts.json",
+		"url": "/api/accounts/open2"
+	},
+	//	余额账单Apiget /api/accounts?address=4205898691220223329L
+	"accountApi": {
+		"mock": "/data/home/accounts.json",
+		"url": "/api/accounts"
+	},
+	//	余额账单Apiget /api/transactions
+	"transactionsApi": {
+		"mock": "/data/home/transactions.json",
+		"url": "/api/transactions"
+	},
+	// 获取受托人接口
+	"delegatesApi": {
+		"mock": "/data/vote/delegates.json",
+		"url": "/api/delegates"
+	},
+	// 获取我的投票列表借口
+	"myvotesApi": {
+		"mock": "/data/vote/delegates.json",
+		"url": "/api/accounts/delegates"
+	},
+	// 获取我的投票列表借口
+	"blocksApi": {
+		"mock": "/data/blockchain/blocks.json",
+		"url": "/api/blocks"
+	},
+	//受托人的基本信息
+	"blockforgingApi": {
+		"mock": "/data/blockforging/delegates.json",
+		"url": "/api/delegates/get"
+	},
+	//详情基本信息
+	"blocksDetailApi": {
+		"mock": "/data/blockDetail/getblocks.json",
+		"url": "/api/blocks/get"
+	},
+	//账户基本信息
+	"accountdetailApi": {
+		"mock": "/data/accountdetail/accounts.json",
+		"url": "/api/accounts"
+	},
+	//谁投我的票接口
+	"votetomeApi": {
+		"mock": "/data/vote/voter.json",
+		"url": "/api/delegates/voters"
+	},
+	//节点列表
+	"peerApi": {
+		"mock": "/data/peer/peers.json",
+		"url": "/api/peers"
+	},
+	"postApi": {
+		"mock": "/data/vote/delegates.json",
+		"url": "/peer/transactions"
+	},
+	"appListApi": {
+		"mock": "/data/application/applist.json",
+		"url": "/api/dapps"
+	},
+	"appInstalledApi": {
+		"mock": "/data/application/applist.json",
+		"url": "/api/dapps/installed"
+	},
+	"forgingStatusApi": {
+		"mock": "/data/blockforging/status.json",
+		"url": "/api/delegates/forging/status"
+	}
+}

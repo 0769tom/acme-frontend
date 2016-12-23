@@ -1,0 +1,20 @@
+var app = angular.module('acme', ['ngRoute', 'ui.bootstrap','ngTable', 'ipCookie', 'pascalprecht.translate'], function($httpProvider) {
+    // Use x-www-form-urlencoded Content-Type
+   // $httpProvider.defaults.headers.post['Origin'] = '*';
+    $httpProvider.defaults.headers.post['Content-Type'] = 'application/json';
+    $httpProvider.defaults.headers.put['Content-Type'] = 'application/json';
+});
+
+app.config(['$translateProvider', function($translateProvider) {
+    var browserLang = navigator.browserLanguage ? navigator.browserLanguage : navigator.language;
+    var defaultLang = 'en-us';
+    if (browserLang && browserLang.indexOf('zh') > -1) {
+        defaultLang = 'zh-cn';
+    }
+    console.log(browserLang, defaultLang);
+    for (var lang in window.Translations) {
+        $translateProvider.translations(lang, window.Translations[lang]);
+    }
+    $translateProvider.preferredLanguage(defaultLang);
+    $translateProvider.useSanitizeValueStrategy(null);
+}]);
